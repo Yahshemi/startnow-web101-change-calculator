@@ -1,43 +1,57 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <title>Change Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
-
 <body>
-  <!-- Write your markup here -->
-  <h1>Change Calculator</h1>
-  <h3>Amount Due</h3>
-  <input id='amount-due' />
-  <h3>Amount Received</h3>
-  <input id='amount-received' />
-  <br />
-  <button id='calculate-change' onclick='handleClickEvent()'>Calculate Change</button>
-  <h3>Customers' Change</h3>
-  <p id="your-change-is"></p>
-  
-  <p id='dollars-output'></p>
-  <p>Dollars</p>
-  <hr />
-  
-  <p id='quarters-output'></p>
-  <p>Quarters</p>
-  <hr />
-  
-  <p id='dimes-output'></p>
-  <p>Dimes</p>
-  <hr />
-  
-  <p id='nickels-output'></p>
-  <p>Nickles</p>
-  <hr />
-  
-  <p id='pennies-output'></p>
-  <p>Pennies</p>
-  <hr />
+  <div id="user-modal">
+    <h1 class="display-1">Change Calculator</h1>
+    <input id='amount-due' placeholder="Amount Due" />
+    <input id='amount-received' placeholder="Amount Received" />
+    <br />
+    <button id='calculate-change' type="button" class="btn btn-success" onclick='handleClickEvent()'>Calculate
+      Change</button>
+    <h3>Customers' Change</h3>
+    <p id="your-change-is"></p>
+  </div>
 
+  <div class="container text-center">
+    <div id="grid-container" class="row">
+      <div id="grid-item" class="col-sm-6">
+        <p id='dollars-output'></p>
+        <p>Dollars</p>
+        <hr />
+      </div>
+      <div id="grid-item" class="col-sm-6">
+        <p id='quarters-output'></p>
+        <p>Quarters</p>
+        <hr />
+      </div>
+    </div>
+
+    <div id="grid-container" class="row">
+      <div id="grid-item" class="col-sm-4">
+        <p id='dimes-output'></p>
+        <p>Dimes</p>
+        <hr />
+      </div>
+      <div id="grid-item" class="col-sm-4">
+        <p id='nickels-output'></p>
+        <p>Nickles</p>
+        <hr />
+      </div>
+      <div id="grid-item" class="col-sm-4">
+        <p id='pennies-output'></p>
+        <p>Pennies</p>
+        <hr />
+      </div>
+    </div>
+
+  </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="main.js"></script>
 </body>

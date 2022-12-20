@@ -1,0 +1,37 @@
+body {
+    background-color: azure;
+}
+h1{
+    margin-top:10px;
+    padding: 20px;
+}
+#amount-due{
+    padding: 20px;
+    font-size: 15px;
+    text-align: center;
+}
+#amount-received{
+    padding: 20px;
+    font-size: 15px;
+    text-align: center;
+}
+#calculate-change{
+    margin-top:15px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    
+}
+#grid-container {
+    padding: 10px;
+    background-color: lightslategray;
+}
+#grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+#user-modal{
+    text-align: center;
+}
