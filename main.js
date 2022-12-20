@@ -1,7 +1,6 @@
 function handleClickEvent() {
   var amountDue = parseFloat( $("#amount-due").val());
   var amountReceived = parseFloat($("#amount-received").val());
-  console.log(amountReceived, amountDue)
 
   var runningTotal = (amountReceived - amountDue) * 100;
   $("#your-change-is").html("$" + runningTotal / 100);
@@ -13,7 +12,7 @@ function handleClickEvent() {
     { where: "#nickels-output", value: 5 },
     { where: "#pennies-output" },
   ];
-  
+
   denomList.forEach(function (item) {
     if (item.value) {
       $(item.where).html(parseInt(runningTotal / item.value));
